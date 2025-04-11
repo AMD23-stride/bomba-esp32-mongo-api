@@ -18,7 +18,7 @@ const Data = mongoose.model('Data', {
 });
 
 // Endpoint to receive data
-app.post('/data', async (req, res) => {
+app.post('/api/data', async (req, res) => {
     const { temperature, humidity } = req.body;
     const newData = new Data({
         temperature,
